@@ -1,0 +1,59 @@
+.compare_img {
+  .compare_num {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+  }
+
+  .compare_last_num {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+  }
+
+  .bottom_icon1 {
+    .box(156px, 44px);
+  }
+
+  .bottom_icon2 {
+    .box(156px, 110px);
+    border-radius: 8px;
+    position: relative;
+    top: -6px;
+    object-fit: cover;
+  }
+
+  .noImg {
+    background: #F3F6FA;
+    position: relative;
+
+    img {
+      width: 49px;
+      height: 37px;
+      position: absolute;
+      top: 37px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+
+    }
+  }
+
+  .compare_ml {
+    margin-left: 8px;
+  }
+}
+
+.box(@width, @height) {
+  width: @width;
+  height: @height;
+  vertical-align: middle;
+}
+
+.position_re {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}

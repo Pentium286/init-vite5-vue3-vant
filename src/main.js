@@ -1,14 +1,28 @@
-import './assets/main.css'
+import './assets/main.css';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
 
-import App from './App.vue'
-import router from './router'
+import 'amfe-flexible';
+import '@vant/touch-emulator';
 
-const app = createApp(App)
+import 'vant/lib/index.css';
+import Vant from 'vant';
 
-app.use(createPinia())
-app.use(router)
+import App from './App.vue';
+import router from './router';
 
-app.mount('#app')
+const app = createApp(App);
+
+app.use(createPinia());
+app.use(router);
+
+app.use(Vant);
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  next();
+});
+
+app.mount('#app');

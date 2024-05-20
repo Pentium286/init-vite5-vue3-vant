@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+.hairCarePopupWrap {
+  :deep(.van-popup) {
+    max-height: 90%;
+
+    .van-popup__close-icon {
+      top: 24px;
+      color: #120E0E;
+      font-size: 26px;
+    }
+  }
+}
+
+.hairCarePopup {
+  padding: 16px 0 30px;
+
+  .title {
+    padding: 8px 16px 16px;
+    color: #1F1F1F;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+  .popup-main {
+    padding: 0 16px;
+    height: calc(90vh - 100px);
+    overflow: auto;
+  }
+
+  .popup-grid {
+    .grid-title {
+      position: relative;
+      padding: 24px 0;
+      color: #120E0E;
+      font-size: 16px;
+      font-weight: 600;
+      text-indent: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -6px;
+        width: 4px;
+        height: 12px;
+        background-color: #DA8F8B;
+        border-radius: 2.5px;
+      }
+    }
+
+    .scalp {
+      display: flex;
+      justify-content: space-between;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .img {
+        display: block;
+        width: 168px;
+        height: 168px;
+        border-radius: 3px;
+      }
+
+      .name {
+        padding: 4px 8px;
+        width: 168px;
+        color: #120E0E;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #F3DDDC;
+        border-radius: 3px;
+      }
+
+      .info {
+        flex-grow: 1;
+        padding: 8px;
+        margin-top: 12px;
+        width: 168px;
+        color: #120E0E;
+        font-size: 14px;
+        background-color: #F8F8F8;
+        border-radius: 6px;
+      }
+    }
+
+    .reason {
+      padding: 16px;
+      width: 100%;
+      color: #120E0E;
+      font-size: 14px;
+      line-height: 24px;
+      background-color: #F8F8F8;
+      border-radius: 16px;
+      white-space: pre-line;
+    }
+  }
+}

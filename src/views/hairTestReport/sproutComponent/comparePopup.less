@@ -1,0 +1,100 @@
+.compare_overlay {
+  top: 88px;
+}
+
+.van-popup {
+  top: 106px;
+  left: 16px;
+  background: transparent;
+  overflow-y: visible;
+
+  .compare_content {
+    width: 343px;
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px -2px rgba(18, 14, 14, 0.3);
+    backdrop-filter: blur(20px);
+    position: relative;
+    font-size: 16px;
+
+    .compare_arrow {
+      position: absolute;
+      top: -19px;
+      width: 0;
+      height: 0;
+      border: 10px solid;
+      border-color: transparent transparent #fff transparent;
+
+    }
+
+    .arrow_left {
+      left: 60px;
+    }
+
+    .arrow_right {
+      right: 60px;
+    }
+
+    .compare_title {
+      text-align: center;
+      font-size: 18px;
+      padding: 24px;
+    }
+
+    .compare_list {
+      min-height: 250px;
+      max-height: 280px;
+      overflow-y: scroll;
+    }
+
+    .compare_item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 16px 20px 16px 23px;
+
+      &:first-of-type {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .times {
+      font-size: 14px;
+      color: #757680;
+    }
+
+    .active {
+      color: #B68379;
+    }
+
+    .compare_icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .compare_foot {
+      display: flex;
+      justify-content: center;
+    }
+
+    .compare_btn {
+      width: 172px;
+      height: 48px;
+      line-height: 48px;
+      font-size: 18px;
+      color: #EEDAD6;
+      background: #120E0E;
+      border-radius: 24px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+
+    .disable {
+      opacity: 0.25;
+    }
+  }
+}

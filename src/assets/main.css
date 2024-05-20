@@ -1,4 +1,4 @@
-@import './base.css';
+/* @import './base.css';
 
 #app {
   max-width: 1280px;
@@ -32,4 +32,36 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
+} */
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+@font-face {
+  font-family: 'DIN-BOLD';
+  src: url('./font/din-bold-2.ttf');
+}
+
+@font-face {
+  font-family: 'STSongti-SC';
+  src: url('https://static.aiwobeauty.com/mmreport/v1.9/stsongti-sc.ttf');
+}
+
+.dialogName {
+  width: 200px;
+}
+
+.dialogName .van-dialog__header--isolated {
+  padding: 12px 0;
+  font-size: 9px;
+}
+
+.dialogName .van-dialog__confirm,
+.dialogName .van-dialog__cancel {
+  height: 32px;
+}
+
+.dialogName .van-button__text {
+  font-size: 9px;
 }
