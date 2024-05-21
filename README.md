@@ -1,4 +1,4 @@
-# jbs-init-vite5-vue3-vant
+# init-vite5-vue3-vant
 
 This template should help get you started developing with Vue 3 in Vite.
 
