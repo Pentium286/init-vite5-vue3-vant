@@ -16,6 +16,14 @@ const routes = [
       title: '毛囊检测报告',
     }
   },
+  {
+    path: '/sproutLog',
+    name: 'sproutLog',
+    component: () => import("@/views/hairTestReport/sproutLog/index.vue"),
+    meta: {
+      title: '发芽日志',
+    },
+  },
 ];
 
 const router = createRouter({

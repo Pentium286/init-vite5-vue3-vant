@@ -36,7 +36,6 @@
             {{ item.title }}
           </div>
         </div>
-        <compareChart ref="chart1" chartId="container1" title="油脂占比" :info="chartInfo1" class="bottom_last" />
         <compareImg :info="compareImgInfo1" />
       </div>
     </div>
@@ -49,7 +48,6 @@
             {{ item.title }}
           </div>
         </div>
-        <compareChart ref="chart2" chartId="container2" title="敏感占比" :info="chartInfo2" class="bottom_last" />
         <compareImg :info="compareImgInfo2" />
       </div>
     </div>
@@ -62,8 +60,6 @@
             {{ item.title }}
           </div>
         </div>
-        <compareChart ref="chart3" chartId="container3" title="毛囊密度" :info="chartInfo3" />
-        <compareChart ref="chart4" chartId="container4" title="健康毛囊占比" :info="chartInfo4" class="bottom_last" />
         <compareImg :info="compareImgInfo3" />
       </div>
     </div>
@@ -76,7 +72,6 @@
             {{ item.title }}
           </div>
         </div>
-        <compareChart ref="chart5" chartId="container5" title="细发占比" :info="chartInfo5" class="bottom_last" />
         <compareImg :info="compareImgInfo5" class="bottom_last" />
       </div>
     </div>
@@ -88,7 +83,6 @@
 <script>
 import http from "@/api/http";
 import dayjs from "dayjs";
-import compareChart from '../sproutComponent/compareChart.vue';
 import comparePopup from '../sproutComponent/comparePopup.vue';
 import compareImg from '../sproutComponent/compareImg.vue';
 import { showToast } from 'vant';
@@ -109,7 +103,7 @@ const $areaList = [
 ];
 
 export default {
-  components: { compareChart, comparePopup, compareImg },
+  components: {comparePopup, compareImg },
   data() {
     return {
       $imgBaseUrl: 'https://aiwo-platform.oss-cn-hangzhou.aliyuncs.com/ailink/hairTestReport/',
